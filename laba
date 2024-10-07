@@ -1,0 +1,52 @@
+# # 1.1 (606+6 = 612)
+# def find_max(numOne, numTwo):
+#   if numOne > numTwo:
+#     return numOne
+#   elif numTwo > numOne:
+#     return numTwo
+#   else:
+#     return "equal"
+#
+# # numberOne = int(input("Ведіть 1-е число: "))
+# # numberTwo = int(input("Ведіть 2-е число: "))
+# numberOne, numberTwo = map(int, input().split())
+# print(find_max(numberOne, numberTwo))
+
+# # 1.1 (654-6 = 648)
+# import math
+# def distance(x1, y1, x2, y2):
+#     return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2) #корінь квадрат
+#
+# x1 = float(input())
+# y1 = float(input())
+# x2 = float(input())
+# y2 = float(input())
+#
+# result = distance(x1, y1, x2, y2)
+# print(f"{result:.5f}")
+
+# # 2.1 (684-6 = 678)
+# cube = lambda x: x**3
+#
+# intNumber = int(input())
+# print(cube(intNumber))
+
+# # 2.2 (656+6 = 662)
+# def converter(grades):
+#   grade_dict = {'A': [], 'B': [], 'C': [], 'D': [], 'F': []}
+#   for grade in grades:
+#     if 90 <= grade <= 100:
+#       grade_dict['A'].append(grade)
+#     elif 80 <= grade <= 89:
+#       grade_dict['B'].append(grade)
+#     elif 70 <= grade <= 79:
+#       grade_dict['C'].append(grade)
+#     elif 60 <= grade <= 69:
+#       grade_dict['D'].append(grade)
+#     elif grade < 60:
+#       grade_dict['F'].append(grade)
+#   return grade_dict
+#
+# grades = list(map(int, input().split()))
+# result = converter(grades)
+# print(result)
