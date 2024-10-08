@@ -1,0 +1,71 @@
+# # 747
+# import random
+# def read_random_line(path):
+#   try:
+#     with open(path, 'r') as file:
+#       lines = file.readlines()
+#       random_index = random.randint(0, len(lines) - 1)
+#       return lines[random_index].strip()
+#   except FileNotFoundError:
+#     print(f"Файл {path} не знайдено.")
+#     return None
+#
+# path = "C:\\Users\\admin\\Desktop\\input.txt"
+# random_line = read_random_line(path)
+# if random_line:
+#   print(random_line)
+
+
+
+
+# # 758
+# from collections import Counter
+#
+# def word_frequency(filename):
+#     with open(filename, 'r') as file:
+#         text = file.read()
+#     words = text.split()
+#     # Counter з модуля collections рахує кількість появ кожного слова у списку.
+#     frequency = Counter(words)
+#     return dict(frequency)
+#
+# result = word_frequency('C:\\Users\\admin\\Desktop\\input.txt')
+# print(result)
+
+
+
+
+# # 761
+# def write_to_file(filename, input_data):
+#     with open(filename, 'w') as file:
+#         for word in input_data:
+#             file.write(word + '\n')
+#
+# def read_from_file(filename):
+#     with open(filename, 'r') as file:
+#         lines = file.readlines()
+#     for line in lines:
+#         print(line.strip())
+#
+# # sequence = ['Python', 'Ruby', 'C++', 'C', 'Java', 'Go', 'JavaScript']
+# input_data = input().split()
+# filename = 'C:\\Users\\admin\\Desktop\\input2.txt'
+# write_to_file(filename, input_data)
+# read_from_file(filename)
+
+
+
+
+# # 763
+# def check(filename, number):
+#     with open(filename, 'r') as file:
+#         numbers = [line.strip() for line in file]
+#     if number in numbers:
+#         return "found"
+#     else:
+#         return "not found"
+# 
+# filename = 'C:\\Users\\admin\\Desktop\\input.txt'
+# number = input("Ведіть номер: ")
+# result = check(filename, number)
+# print(result)
