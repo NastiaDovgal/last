@@ -1,1 +1,24 @@
+# # 1 - 753
+# # 1) Імпорт усієї бібліотеки
+# import itertools
+# numbers_list = list(map(int, input().split()))
+# permutations = list(itertools.permutations(numbers_list))
+# print(permutations)
 
+# # 2) Імпорт конкретного компонента
+# from itertools import permutations
+# numbers_list = list(map(int, input().split()))
+# permutations = list(permutations(numbers_list))
+# print(permutations)
+
+# # 3) Імпорт усіх компонентів
+# from itertools import *
+# numbers_list = list(map(int, input().split()))
+# permutations = list(permutations(numbers_list))
+# print(permutations)
+
+# # 4) Імпорт модуля з псевдонімом
+# import itertools as it
+# numbers_list = list(map(int, input().split()))
+# permutations = list(it.permutations(numbers_list))
+# print(permutations)
