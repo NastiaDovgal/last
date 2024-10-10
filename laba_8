@@ -22,3 +22,47 @@
 # numbers_list = list(map(int, input().split()))
 # permutations = list(it.permutations(numbers_list))
 # print(permutations)
+
+
+
+
+
+
+
+# # 2
+import convertor
+# import convertor as convertor
+# from convertor import *
+# from convertor import usd_to_eur, uah_to_usd, uah_to_eur, usd_to_uah, eur_to_uah
+
+# import datetime
+# import datetime as dt
+# from datetime import *
+from datetime import datetime, timedelta
+
+usd_amount = 100
+eur_amount = convertor.usd_to_eur(usd_amount)
+print(f"{usd_amount} USD = {eur_amount:.2f} EUR\n")
+
+uah_amount = 100
+usd_amount = convertor.uah_to_usd(uah_amount)
+print(f"{uah_amount} UAH = {usd_amount:.2f} USD\n")
+
+eur_amount = convertor.uah_to_eur(uah_amount)
+print(f"{uah_amount} UAH = {eur_amount:.2f} EUR\n")
+
+usd_amount = 100
+uah_amount = convertor.usd_to_uah(usd_amount)
+print(f"{usd_amount} USD = {uah_amount:.2f} UAH\n")
+
+eur_amount = 100
+uah_amount = convertor.eur_to_uah(eur_amount)
+print(f"{eur_amount} EUR = {uah_amount:.2f} UAH\n")
+
+
+
+current_time = datetime.now()
+print("Поточний час:", current_time)
+
+new_date = current_time + timedelta(days=7)
+print("Дата через 7 днів:", new_date.strftime("%Y-%m-%d"))
